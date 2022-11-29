@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+i{
+    color: #228be6;
+}
+
+li{
+    margin-bottom: 7px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.img-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(78, 122, 143, 0.377)), url(../images/haha.jpg);
+    height: 80vh;
+    position: relative;
+    
+}
+
+.banner{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.major{
+    margin-top: 10px;
+
+}
+
+.navbar{
+    height: 60px;
+}
+
+.bio1{
+    padding: 100px 50px 0 40px;
+    background-color: #f1f3f5;
+    height: 400px;
+}
+
+.bio2{
+    padding: 100px 0 0 50px;
+    background-color: #e9ecef;
+    height: 400px;
+}
+
+.bio-header{
+    margin-bottom: 30px;
+}
+
+.card-title{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.in-nghieng{
+    font-style: italic;
+}
+
+.nen{
+    background-color: #74c0fc;
+    border-radius: 4px;
+    width: 64px;
+    height: 21px;
+    padding: 3px 7px;
+}
+
+.nen2{
+    background-color: white;
+    border-radius: 10rem;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #228be6;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.nen3{
+    background-color: #228be6;
+    color:  #fff;
+    border-radius: 8px;
+    width: 64px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.khoang-cach1{
+    margin-bottom: 20px;
+}
+
+.khoang-cach2{
+    margin-top: 30px;
+}
+
+.khoang-cach3{
+    margin-bottom: 5px;
+}
+
+.vien1{
+    background-color: #228be6;
+    width: 50px;
+    height: 4px;
+}
+
+.vien2{
+    background-color: #adb5bd;
+    width: 50px;
+    height: 4px;
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.phong{
+    transform: scale(1.5, 1.5);
+    margin-left: 20px;
+}
+
+.phong1{
+    /* transform: scale(2, 2); */
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: repeat(2, 600px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.khoang-cach4{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.flex3{
+   justify-content: space-between;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   border-bottom: 1px solid orangered;
+   padding-bottom: 30px;
+}
+
+.flex4{
+    justify-content: flex-start;
+    gap: 43.21px;
+}
+
+.flex5{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mau-nen{
+    background-color: #f8f9fa;
+}
+
+.vien-anh{
+    border-left: 1px solid orangered;
+    padding-left: 20px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns:  1fr 1fr 2fr;
+    width: 350px;
+}
+
+.nhom{
+    grid-column: 2/4;
+}
+
+.vien3{
+    border: 1px solid #adb5bd;
+    width: 352px;
+}
+
+.chan-vien{
+    border-bottom: 1px solid #adb5bd;
+    padding: 7px;
+}
+
+.img{
+    width: 350px;
+}
+
+/* responsive */
+
+@media (max-width: 1200px) and (min-width: 700px) {
+    .container {
+        width: 700px;
+    }
+
+    .grid{
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(6, 385px);
+        align-items: start;
+    }
+
+    .bio1{
+        height: 600px;
+    }
+
+    .bio2{
+        height: 600px;
+    }
+
+    .navbar{
+        height: 90px;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .chieu-cao1{
+        grid-row: 1/3;
+        height: 800px;
+    }
+
+    .chieu-cao2{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        height: 800px;
+    }
+
+    .chieu-cao3{
+        grid-column: 1/2;
+        grid-row: 5/7;
+        height: 385px;
+    }
+
+    .chieu-cao4{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .chieu-cao5{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        height: 800px;
+    }
+
+    .chieu-cao6{
+        grid-column: 2/3;
+        grid-row: 4/6;
+        height: 800px;
+    }
+
+    .the-du-an{
+        width: 220px;
+        height: auto;
+    }
+
+    .img{
+        width: 218px;
+    }
+
+    .grid1{
+        width: 220px;
+    }
+
+    .chan-vien{
+        padding: 0;
+    }
+
+    .img-background{
+        background-position: 50% 5%;
+    }
+
+
+}
+
+@media(max-width: 700px){
+    .img-background{
+        background-position: 50% 5%;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .hien-thi{
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 90px;
+    }
+
+    .border-left{
+        border: 0;
+    }
+
+    .border-right{
+        border: 0;
+    }
+
+    .can-trai{
+        justify-content: flex-start;
+    }
+
+    .bio{
+        display: block;
+    }
+
+    .bio1{
+        width: 400px;
+    }
+
+    .bio2{
+        width: 400px;
+    }
+
+    .grid{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(6, 600px);
+    }
+    
+    .flex3{
+        flex-direction: column;
+    }
+
+    .vien-anh{
+        border-left: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .vien-dep{
+        width: 400px;
+        border-bottom: 1px solid orangered;
+        padding: 10px;
+    }
+
+    .flex4{
+        flex-direction: column;
+    }
+
+    .flex5{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    /* 
+    .grid{
+        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(6, 385px);
+        align-items: start;
+    }
+
+    .bio1{
+        height: 600px;
+    }
+
+    .bio2{
+        height: 600px;
+    }
+
+    
+
+    .card{
+        width: 300px;
+    }
+
+    .chieu-cao1{
+        grid-row: 1/3;
+        height: 800px;
+    }
+
+    .chieu-cao2{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        height: 800px;
+    }
+
+    .chieu-cao3{
+        grid-column: 1/2;
+        grid-row: 5/7;
+        height: 385px;
+    }
+
+    .chieu-cao4{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .chieu-cao5{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        height: 800px;
+    }
+
+    .chieu-cao6{
+        grid-column: 2/3;
+        grid-row: 4/6;
+        height: 800px;
+    }
+
+    .the-du-an{
+        width: 220px;
+        height: auto;
+    }
+
+    .img{
+        width: 218px;
+    }
+
+    .grid1{
+        width: 220px;
+    }
+
+    .chan-vien{
+        padding: 0;
+    }
+
+    .img-background{
+        background-position: 50% 5%;
+    }*/
+}
