@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(34, 88, 122, 0.329)), url(../images/ekko.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header-container {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Navbar */
+.nav-element {
+    border-left: 0.5px solid #f1f3f5;
+    padding: 0 25px 0 25px;
+
+    align-items: center;
+}
+
+.nav-element:last-child {
+    border-right: 0.5px solid #f1f3f5;
+}
+
+.nav-banner {
+    border-left: 0.5px solid #f1f3f5;
+    padding: 5px 25px;
+}
+
+.nav-element {
+    border-left: 0.5px solid #f1f3f5;
+    padding: 0 25px 0 25px;
+}
+
+.nav-element:hover {
+    background-color: #f1f3f5;
+    cursor: pointer;
+}
+
+/* Thong tin ca nhan */
+.own-info-left {
+    background-color: #f1f3f5;
+}
+
+.own-info-right {
+    background-color: #e9ecef;
+}
+
+/* Thong tin nghe nghiep */
+.job-container {
+    width: 400px;
+    height: 800px;
+
+    padding: 30px 20px;
+    border: 1px solid #e9ecef;
+}
+
+.job {
+    flex-wrap: wrap;
+}
+
+.ex-list {
+    margin-left: 25px;
+    margin-top: 60px;
+
+    list-style: none;
+}
+
+.ex-elem {
+    gap: 10px;
+}
+
+.level {
+    width: 50px;
+    height: 4px;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: #dee2e6;
+
+    display: inline-block;
+}
+
+.interests {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.interests-element {
+    height: 87.5px;
+
+    border: 1px solid #228be6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Chung chi giai thuong */
+.cef img {
+    width: 200px;
+}
+
+/* Project */
+.project-img {
+    width: 100%;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.project-container {
+    width: 350px;
+    height: 610px;
+
+    border: 1px solid #e9ecef;
+}
+
+.project-down {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.border-bottom {
+    padding: 6px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.border-bottom:nth-child(10), .border-bottom:nth-child(9) {
+    border: none;
+}
+
+.project-down h2 {
+    font-size: 18px;
+    font-weight: 500;
+
+    grid-column: 1 / -1;
+}
+
+.des-project-down {
+    grid-column: 2 / -1;
+}
+
+.mission-project-down {
+    grid-column: 2 / -1;
+}
+
+.tech-project-down {
+    grid-column: 2 / -1;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f3f5;
+    height: 70px;
+}
+
+/* Chung */
+.mt-40 {
+    list-style: none;
+}
+
+/* Default */
+i {
+    color: #228be6;
+}
+
+a:link, a:visited {
+    text-transform: uppercase;
+
+    color: #495057;
+    text-decoration: none;
+}
+
+/* Small element */
+.job-container i {
+    transform: scale(2.5, 2.5);
+    color: #ced4da;
+}
+
+.bullet-point {
+    /* Khong co padding thi bi bug */
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+    margin-top: 6px;
+    
+    background-color: #228be6;
+    border-radius: 50%;
+}
+
+.ex-time {
+    font-size: 12px;
+}
+
+.ex-time span {
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+
+    padding: 3px 10px;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1200px) {
+    .project-container {
+        height: 650px;
+    }
+
+    .nav-element {
+        border: 0;
+    }
+
+    .nav-element:last-child {
+        border: 0;
+    }
+
+    .nav-banner {
+        border: 0;
+    }
+}
